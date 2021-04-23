@@ -10,10 +10,10 @@ function snapCrackle(maxValue)
     {
         let isEven = index % 2 === 0
         let isOdd = !isEven
-        let iSMultFive = index % 5 === 0
-        let notMultFive = !iSMultFive
+        let isMultFive = index % 5 === 0
+        let notMultFive = !isMultFive
 
-        if (isOdd && iSMultFive)
+        if (isOdd && isMultFive)
         {
             string += 'SnapCrackle, '
         }
@@ -21,7 +21,7 @@ function snapCrackle(maxValue)
         {
             string += 'Snap, '
         }
-        else if (iSMultFive && isEven)
+        else if (isMultFive && isEven)
         {
             string += 'Crackle, '
         }
